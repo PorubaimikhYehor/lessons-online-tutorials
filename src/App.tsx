@@ -1,17 +1,19 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import LoginForm from './components/login-form/login-form'
 import Sidebar from './components/sidebar/sidebar'
+import Layout from './components/layout/layout'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      {/* <LoginForm></LoginForm> */}
-      <Sidebar></Sidebar>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/login-form" element={<LoginForm />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

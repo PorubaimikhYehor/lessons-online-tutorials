@@ -1,5 +1,6 @@
 import './login-form.css'
 import backgroundImage from '../../assets/Best-of-2016-Nasim-Mansurov-20.jpg';
+import { Link } from 'react-router-dom';
 
 function LoginForm() {
   return (
@@ -29,7 +30,9 @@ function LoginForm() {
                 <a href="#" className='mx-2 hover:underline'>Forget password</a>
               </label>
             </div>
+            <Link to="/">
             <button className='w-full h-8 bg-white rounded-full text-black text-base font-semibold'>Log in</button>
+            </Link>
             <div className="register text-sm text-center mt-6 mb-2">
               <p className=''>Do not have a account <a className='font-semibold hover:underline' href="#">Register</a></p>
             </div>
