@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      strokeWidth: {
+        '5': '5px',
+      }
+    },
   },
   plugins: [],
 }
