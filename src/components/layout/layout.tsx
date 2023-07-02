@@ -8,6 +8,7 @@ export default function Layout() {
         <li><Link to="/sidebar">Sidebar</Link></li>
         <li><Link to="/login-form">Login form</Link></li>
         <li><Link to="/analog-clock">Analog clock</Link></li>
+        <li><Link to="/navigation-menu">Navigation menu</Link></li>
       </nav>
     </>
   )
