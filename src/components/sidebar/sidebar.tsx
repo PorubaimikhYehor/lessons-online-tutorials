@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-interface MenuItem {
-  title: string;
-  icon: string;
-  active: boolean;
-  id: number,
-  link?: string
-}
+import { MenuItem } from "../../models/menu-item.model";
 
 export default function Sidebar() {
   const [isShown, toggleMenu] = useState(true);
