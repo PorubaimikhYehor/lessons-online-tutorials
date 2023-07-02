@@ -55,7 +55,7 @@ export class AnalogClock extends React.Component<Props, State> {
     return {
       h: date.getHours(),
       m: date.getMinutes(),
-      s: date.getSeconds()
+      s: date.getSeconds() + date.getMilliseconds() / 1000
     }
   }
 
